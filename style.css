@@ -1,0 +1,129 @@
+.header{
+	text-align: center;
+}
+.container{
+	display: flex;
+	justify-content: center;
+}
+.container > div{
+	margin-right: 20px;
+	padding-right: 20px;
+}
+
+.rating-foot-note{
+	font-size: 15px;
+}
+.rating-box{
+	border-right: 1px solid rgba(115,121,120, 0.3);
+	transition: padding 0.3s ease-in;
+}
+.average-rating-box{
+	border-right: 1px solid rgba(115,121,120, 0.3);
+	cursor: pointer;
+	transition: padding 0.3s ease-in;
+}
+.rating-box:hover, .average-rating-box:hover{
+	box-shadow: 4px 6px 10px 0 #8888886b!important;
+	padding: 15px;
+	transition: padding 0.3s ease-out;
+
+}
+.five-star > .rating-bar > div{
+	width: 86px;
+}
+.four-star > .rating-bar > div{
+	width: 9px;
+}
+.three-star > .rating-bar > div{
+	width: 3px;
+}
+.two-star > .rating-bar > div{
+	width: 1px;
+}
+.one-star > .rating-bar > div{
+	width: 1px;
+}
+.rating-bar{
+	width: 100px;
+	height: 12px;
+	background-color:lightgrey;
+	display: inline-grid;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.rating{
+	margin-bottom:0px;
+	opacity: 0.4;
+}
+.rating:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+.rating-bar > div{
+	background-color:#0092d6;
+	height: 100%;
+}
+.star{
+	font-size: 20px;
+}
+#average-star{
+	color: #0092d6;
+	font-size: 25px;
+	margin-top: -15px;
+}
+#average-value, .header{
+	font-family: Montserrat,sans-serif;
+	font-weight: bolder;
+	font-size: 30px;
+}
+#average-value{
+	margin-top: 0px;
+}
+button{
+	background-color: #0092d6;
+	border: 0px;
+	color: white;
+	border-radius: 4px;
+	padding: 10px;
+	margin-right: 20px;
+	font-weight: bold;
+	box-shadow: 4px 6px 10px 0 #8888886b!important;
+	margin-bottom: 20px;
+	transition: transform 0.3s ease-in;
+}
+button:hover{
+	box-shadow: 1px 1px 1px 0 #8888886b!important;
+	cursor: pointer;
+}
+button:active {
+  transform: translateY(10px);
+  transition: transform 0.3s ease-out;
+}
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    .container{
+    	margin-left: 65px;
+    }
+}
+@media only screen and (max-width: 600px){
+	/* phones [600px -> below]*/
+	.container{
+		display: block;
+		text-align: center;
+	}
+	.average-rating-box, .buttons-box{
+		text-align: center;
+	}
+	.container > div{
+		display: inline-block;
+		margin-bottom: 20px;
+		border: 0px;
+	}
+	.rating-box{
+		display: block;
+		text-align: justify;
+	}
+
+
+}
